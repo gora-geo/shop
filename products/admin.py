@@ -12,7 +12,7 @@ class ProductCategoryAdmin(admin.ModelAdmin):
         model = ProductCategory
 
 admin.site.register(ProductCategory, ProductCategoryAdmin)
-
+#test
 class ProductAdmin (admin.ModelAdmin):
     list_display = [field.name for field in Product._meta.fields]
     inlines = [ProductImageInline]
